@@ -90,12 +90,12 @@ function res_score(res_value) {
 function ann_res(winner) {
     if (winner == 'X') {
         var player = document.getElementById('player_1').innerText;
-        Swal.fire('🏆🏆🏆 ' + player + ' Won 🏆🏆🏆')
+        Swal.fire('🏆 ' + player + ' Won 🏆')
         document.getElementById('cont').style.display = 'block';
         res_score('X');
     } else if (winner == 'O') {
         var player = document.getElementById('player_2').innerText;
-        Swal.fire('🏆🏆🏆 ' + player + ' Won 🏆🏆🏆')
+        Swal.fire('🏆 ' + player + ' Won 🏆')
         document.getElementById('cont').style.display = 'block';
         res_score('O');
     } else if (winner == 'T') {
