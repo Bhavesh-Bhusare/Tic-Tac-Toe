@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #1488CC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(55deg, #2B32B2, #1488CC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    font-size: 60px;
+}
+
+.player {
+    font-size: 25px;
+    margin-top: 20px;
+    color: white;
+}
+
+#btn {
+    margin-top: 15px;
+}
+
+.ttt_btn {
+    color: #24fe41 !important;
+}
+
+.ttt_btn:hover {
+    color: black !important;
+    background: white;
+}
+
+#game {
+    margin: 50px 20px;
+}
+
+.block {
+    border: 1px solid grey;
+    height: 100px;
+    width: 100px;
+    padding: 0px !important;
+}
+
+span.block_content {
+    font-size: 20px;
+    padding: 0px;
+}
+
+.select_btn {
+    opacity: 0;
+    height: 100px;
+    width: 100px;
+    padding: 0px;
+}
+
+.center {
+    justify-content: center;
+    width: 25%;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.text_center {
+    justify-content: center;
+    margin: auto;
+    font-size: x-large;
+}
