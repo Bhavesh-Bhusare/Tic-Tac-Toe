@@ -22,8 +22,13 @@ function player_name() {
 
     ]).then((result) => {
         if (result.value) {
-            document.getElementById('player_1').innerText = result.value[0];
-            document.getElementById('player_2').innerText = result.value[1];
+            if (result.value[0] != "" && result.value[1] != "") {
+                document.getElementById('player_1').innerText = result.value[0];
+                document.getElementById('player_2').innerText = result.value[1];
+            } else {
+                document.getElementById('player_1').innerText = 'Player X';
+                document.getElementById('player_2').innerText = 'Player O';
+            }
             Swal.fire({
                 title: 'All the Best 👍',
                 confirmButtonText: 'Start Game'
@@ -90,12 +95,12 @@ function res_score(res_value) {
 function ann_res(winner) {
     if (winner == 'X') {
         var player = document.getElementById('player_1').innerText;
-        Swal.fire('🏆 ' + player + ' Won 🏆')
+        Swal.fire('🏆🏆🏆 ' + player + ' Won 🏆🏆🏆')
         document.getElementById('cont').style.display = 'block';
         res_score('X');
     } else if (winner == 'O') {
         var player = document.getElementById('player_2').innerText;
-        Swal.fire('🏆 ' + player + ' Won 🏆')
+        Swal.fire('🏆🏆🏆 ' + player + ' Won 🏆🏆🏆')
         document.getElementById('cont').style.display = 'block';
         res_score('O');
     } else if (winner == 'T') {

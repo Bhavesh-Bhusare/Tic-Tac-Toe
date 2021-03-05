@@ -23,9 +23,9 @@
     </div>
     <div class="player" style="color: #ffeb3b;">
         <div class="d-flex justify-content-evenly">
-            <div class="col-3 px-3 py-2" style="border: 2px solid #eac2c2; border-radius: 10px;">
-                <div class="d-flex justify-content-between">
-                    <div id="player_1">
+            <div class="col-5 col-md-4 px-3 py-2" style="border: 2px solid #eac2c2; border-radius: 10px;">
+                <div class="d-flex justify-content-between ">
+                    <div id="player_1" class="me-2 overflow-auto">
                         Player X
                     </div>
                     <div id="score_1" class="score_disp" style="display: none;">
@@ -33,9 +33,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 px-3 py-2" style="border: 2px solid #eac2c2; border-radius: 10px;">
-                <div class="d-flex justify-content-between">
-                    <div id="player_2">
+            <div class="col-5 col-md-4 px-3 py-2" style="border: 2px solid #eac2c2; border-radius: 10px;">
+                <div class="d-flex justify-content-between ">
+                    <div id="player_2" class="me-2 overflow-auto">
                         Player O
                     </div>
                     <div id="score_2" class="score_disp" style="display: none;">
@@ -109,13 +109,13 @@
     </div>
 
     <div id="reload" style="display: none;">
-        <div class="center d-flex">
+        <div class=" d-flex justify-content-center me-2">
             <button id="restart" type="button" class="btn btn-outline-info ttt_btn" onclick="restart();">New Game</button>
 
         </div>
     </div>
     <div id="cont" style="display: none;">
-        <div class="center d-flex">
+        <div class=" d-flex justify-content-center me-2">
             <button id="reset" type="button" class="btn btn-outline-info ttt_btn" onclick="Cont_game();">Next Match </button>
         </div>
     </div>
